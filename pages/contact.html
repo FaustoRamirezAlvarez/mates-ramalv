@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c28d94b597.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Mateando - E-commerce de Mates y Accesorios</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><div class="header__logo-container"> 
+            <img class="header__logo" src="../images/logo.png" alt="Logo de Mateando, tienda de mates en Argentina">
+            <span class="header__nombre-marca">Mates Ramalv</span> 
+        </div></a>
+
+        <input type="checkbox" id="menu-interruptor" class="header__checkbox">
+    
+        <label for="menu-interruptor" class="header__hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span> 
+        </label>
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="../index.html#productos">Productos</a></li>
+                <li class="header__nav-item"><a href="../index.html#reseñas">Tutoriales</a></li>
+                <li class="header__nav-item"><a href="./contact.html">Contacto</a></li>
+                <a href="#carrito" class="header__cart-link" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto" class="contact-section">
+            <div class="contact__container">
+                <div class="contact-info">
+                    <div class="contact-info__header">
+                        <h2 class="contact-info__main-title">Ponete en contacto</h2>
+                        <p class="contact-info__description">¿Tenés dudas sobre qué mate elegir o querés hacer un pedido personalizado? Escribinos o visitanos.</p>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="fa-solid fa-phone contact-info__icon"></i>
+                        <div>
+                            <h3 class="contact-info__title">Llámenos / WhatsApp</h3>
+                            <p class="contact-info__text">+54 11 2345-6789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="fa-solid fa-location-dot contact-info__icon"></i>
+                        <div>
+                            <h3 class="contact-info__title">Ubicación</h3>
+                            <p class="contact-info__text">Av. del Libertador 1420, Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="fa-solid fa-clock contact-info__icon"></i>
+                        <div>
+                            <h3 class="contact-info__title">Horarios de Atención</h3>
+                            <p class="contact-info__text">Lun - Vie: 9:00 hs - 18:00 hs<br>Sábados: 9:00 hs - 13:00 hs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" action="#" method="POST">
+                    <h2 class="form__title">Consultas y Pedidos</h2>
+                    <p class="form__subtitle">Dejanos tu mensaje y te asesoramos para elegir tu próximo mate.</p>
+
+                    <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ej: Mateo González" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="tuemail@ejemplo.com" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="mensaje" class="form__label">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="form__textarea" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form__btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <h3 class="footer__marca">Mates Ramalv</h3>
+                <p class="footer__text">La cultura del buen mate en un solo lugar. Productos artesanales de la mejor calidad.</p>
+            </div>
+
+            <div class="footer__column">
+                <h4 class="footer__title">Navegación</h4>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="../index.html#inicio">Inicio</a></li>
+                    <li class="footer__item"><a href="../index.html#productos">Productos</a></li>
+                    <li class="footer__item"><a href="../index.html#reseñas">Reseñas</a></li>
+                    <li class="footer__item"><a href="./contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h4 class="footer__title">Seguinos</h4>
+                <div class="footer__socials">
+                    <a href="https://instagram.com" target="_blank" class="footer__social-link" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" class="footer__social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link" aria-label="Tik Tok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="mailto:ramirezalvarezf06@email.com" target="_blank" class="footer__social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2026 Mates Ramalv - Todos los derechos reservados.</p>
+            <div class="footer__insignias">
+                <span class="footer__insignia"><i class="fa-solid fa-truck-fast"></i> Envíos a todo el país</span>
+                <span class="footer__insignia"><i class="fa-solid fa-credit-card"></i> Mercado Pago / Tarjetas</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
